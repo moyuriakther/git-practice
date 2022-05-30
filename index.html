@@ -8,6 +8,7 @@
   </head>
   <body>
     <h1>gelo image</h1>
+    <h1>Hello image!</h1>
     <h1 id="api"></h1>
   </body>
   <script>
@@ -17,8 +18,9 @@
         .then((data) => {
           document.getElementById("api").innerText = data.activity;
         });
-    }setInterval(() => {
-      taskAutoChange()
-    }, 10000);
+    }
+    setInterval(() => {
+      taskAutoChange();
+    }, 1000);
   </script>
 </html>
